@@ -1,5 +1,6 @@
 header {
     background-color: rgb(47, 53, 53);
+    width: 100%;
 }
 h1 {
     color: floralwhite;
@@ -7,3 +8,4 @@ h1 {
 aside {
     background-color: rgb(200, 199, 199);
 }
+

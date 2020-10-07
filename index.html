@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forcast</title>
     <link rel="stylesheet" href="style.css">
-
-
+    <!-- add jquery -->
+    <!-- add bootstrap -->
 </head>
 <body>
     <header class="row">
@@ -15,15 +15,28 @@
         <div class="col-span-3"></div>
     </header>
 <div class="row">
-    <aside class="col-span-4">
+    <form class="col-span-4">
         <!-- search bar -->
-        <div>
+        <h4>Search for a City:</h4>
+        <input type="text" id="cityInput"></input><br>
+        <!-- search button -->
+        <input id="search" value="Add City" type="submit"></input><br>
+        <aside id="cities">
             <!-- field for cities to be saved -->
-        </div>
-    </aside>
+        </aside>
+    </form>
     <main class="col-span-8">
         <div>
             <!-- city information -->
+            <h2></h2>
+            <br>
+            <p id="tempLine"></p>
+            <br>
+            <p id="humidLine"></p>
+            <br>
+            <p id="windLine"></p>
+            <br>
+            <p id="indexLine"></p>
         </div>
 
         <div>
@@ -33,7 +46,7 @@
 </div>
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
